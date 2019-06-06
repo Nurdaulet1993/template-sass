@@ -1,0 +1,24 @@
+.cart {
+    text-decoration: none;
+    position: relative;
+    color: gray(1);
+    margin-right: ((20 / 2) / 16) * 1rem; 
+
+    &__badge {
+        min-width: (19 / 16) * 1rem;
+        height: (19 / 16) * 1rem;
+        padding: (4 / 16) * 1rem (6 / 16) * 1rem;
+        font: {
+            size: (12 / 16) * 1rem;
+            font-weight: $fw-normal;
+        }
+        border-radius: 50%;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+    }
+}
