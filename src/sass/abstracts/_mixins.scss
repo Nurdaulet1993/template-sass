@@ -1,0 +1,20 @@
+@mixin mq($size) {
+    @if map-has-key($breakpoints, $size) {
+
+        $breakpoint: map-get($breakpoints, $size);
+
+        @media only screen and (max-width: $breakpoint) {
+            @content;
+        }
+
+    }@else if type-of($size) == number and not unitless($size) {
+
+        @media only screen and (max-width: $size) {
+            @content;
+        }
+
+    } @else {
+        @error 'The mq needs to be puted a number with units or jey from $breakpoints. You entered #{$size}'
+    }
+    
+}

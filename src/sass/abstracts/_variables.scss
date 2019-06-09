@@ -1,5 +1,7 @@
 // Colors
 $primary: #f72464;
+$accent: darken(#c3a377, 20%);
+
 $grays: (
     1: #fff,
     2: #c4c4c4,
@@ -18,3 +20,11 @@ $ff-sans: 'Muli', sans-serif;
 $fw-light: 300;
 $fw-normal: 400;
 $fw-bold: 600;
+
+// Media
+
+$breakpoints: (
+    small: 600px,
+    medium: 900px,
+    large: 1200px
+);

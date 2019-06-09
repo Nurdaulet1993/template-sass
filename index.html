@@ -6,38 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/vendor/fontawesome-free-5.9.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/all.css">
+    <script src="./assets/js/all.js" defer="defer"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="page">
-        <header class="header">
-            <div class="container">
-                <a href="javascript:void(0)" class="logo">Logotype</a>
+    <header class="header">
+        <div class="container">
+            <div class="header__left">
+                <a href="javascript:void(0)" class="logo header__logo">
+                    <img src="./assets/img/logo.svg" alt="logotype" width="150">
+                </a>
+
                 <nav>
-                    <ul class="nav">
-                        <li class="nav__item">
-                            <a href="javascript:void(0)" class="nav__link">Placeholder</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="javascript:void(0)" class="nav__link">Placeholder</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="javascript:void(0)" class="nav__link">Placeholder</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="javascript:void(0)" class="nav__link">Placeholder</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="javascript:void(0)" class="nav__link">Placeholder</a>
-                        </li>
+                    <ul class="nav header__nav">
+                        <li class="nav__item"><a href="javascript:void(0)" class="nav__link active">Главная</a></li>
+                        <li class="nav__item"><a href="javascript:void(0)" class="nav__link">О продукте</a></li>
+                        <li class="nav__item"><a href="javascript:void(0)" class="nav__link">Польза</a></li>
+                        <li class="nav__item"><a href="javascript:void(0)" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="javascript:void(0)" class="nav__link">Контакты</a></li>
                     </ul>
                 </nav>
-                <a href="javascript:void(0)" class="cart">
-                    <img src="./assets/img/cart.png" alt="cart">
-                    <span class="cart__badge">3</span>
-                </a>
             </div>
-        </header>
-    </div>
+
+            <div class="call-back">
+                <!-- <a href="tel:+77784097967" class="btn-line"> <i class="fas fa-phone"></i></a> -->
+                <a href="javascript:void(0)" class="btn-full_accent"><i class="fas fa-phone"></i></a>
+            </div>
+
+            <div class="btn-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container"></div>
+    </section>
 </body>
 </html>

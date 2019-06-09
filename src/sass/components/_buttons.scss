@@ -1,0 +1,42 @@
+%btn {
+    display: inline-block;
+    font-size: (12 / 16) * 1rem;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem;
+    text: {
+        decoration: none;
+        transform: uppercase;
+    }
+}
+
+.btn-line{
+    @extend %btn;
+    padding: 0.6rem;
+    font-size: 16px;
+    color: $accent!important;
+    border-radius: 50%;
+    border: 1px solid $accent;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+        background-color: $accent;
+        color: #fff!important;
+    }
+    // text-shadow: 2px 2px 8px $accent;
+}
+
+.btn-full_accent {
+    @extend %btn;
+    padding: 0.6rem;
+    color: #fff!important;
+    background-color: $primary;
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+    // border: 1px solid $accent;
+
+    &:hover {
+        transform: translateY(-16%);
+        box-shadow: 0 0 25px 0 $accent;
+        
+    }
+}

@@ -1,1 +1,1 @@
-"use strict";
+"use strict";document.querySelectorAll(".header__nav .nav__link").forEach(function(e){e.onclick=function(){document.querySelector(".header__nav .nav__link.active").classList.remove("active"),this.classList.add("active")}});

@@ -1,10 +1,101 @@
 .header {
     width: 100%;
+    // border-bottom: 1px solid #d7d7d7;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
 
+    nav {
+        @include mq(930px) {
+            display: none;
+        }
+    }
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
+        @include mq(930px) {
+            height: (68 / 16) * 1rem;
+            padding: 0 30px;
+        }
+    }
+
+    .header__left {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: gray(7);
+    }
+
+    .logo {
+        margin-right: (60 / 16) * 1rem;
+        @include mq(930px) {
+            margin-right: 0;
+        }
+    }
+
+    .nav {
+        display: flex;
+    
+        &__link {
+            display: flex;
+            align-items: center;
+            margin-right: 25px;
+            height: (68 / 16) * 1rem;
+            position: relative;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background-color: $accent;
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                transition: 0.5s;
+            }
+
+            &:hover, &.active {
+                color: $accent;
+            }
+
+            &:hover:after, &.active:after {
+                width: 100%;
+            }
+        }
+    
+    }
+    .call-back {
+        @include mq(690px) {
+            display: none;
+        }
+    }
+    .btn-menu {
+        width: 35px;
+        height: 30px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        @include mq(930px) {
+            display: flex;
+        }
+
+        span {
+            width: 90%;
+            height: 5px;
+            background-color: gray(4);
+        }
     }
 }
+
+
+
+
 
