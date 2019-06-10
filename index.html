@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/vendor/fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/vendor/owl-carusel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/owl-carusel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/all.css">
     <script src="./assets/js/all.js" defer="defer"></script>
     <title>Document</title>
@@ -176,42 +178,109 @@
                 <h4 class="title__heading">ПРЕИМУЩЕСТВА ПРОДУКЦИИ</h4>
             </div>
             <div class="advantages__content">
-                <div class="advantages__item">
-                    <div class="advantages__icon">
-                        <i class="fas fa-atom"></i>
+                <div class="owl-carousel">
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="advantages__heading">Уникальная формула</div>
+                        <p class="advantages__text">
+                            Уникальная формула позволяет улучшить качество 
+                            и продолжительность активного долголетия при помощи инновационной разработки 
+                            Казахстанских ученых, позволившей извлечь до 85% полезных веществ из 189 природных компонентов!
+                        </p>
                     </div>
-                    <div class="advantages__heading">Уникальная формула</div>
-                    <p class="advantages__text">
-                        Уникальная формула позволяет улучшить качество 
-                        и продолжительность активного долголетия при помощи инновационной разработки 
-                        Казахстанских ученых, позволившей извлечь до 85% полезных веществ из 189 природных компонентов!
-                    </p>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__icon">
-                        <i class="fas fa-atom"></i>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="advantages__heading">Богат антиоксидантами</div>
+                        <p class="advantages__text">
+                            Абсолютно новый инновационный продукт, являющийся комплексом натуральных антиоксидантов, 
+                            а так же эндогенные соединения, которые являются не синтетическими природными антиоксидантами, 
+                            активно предотвращающими окислительные цепные процессы организма
+                        </p>
                     </div>
-                    <div class="advantages__heading">Уникальная формула</div>
-                    <p class="advantages__text">
-                        Уникальная формула позволяет улучшить качество 
-                        и продолжительность активного долголетия при помощи инновационной разработки 
-                        Казахстанских ученых, позволившей извлечь до 85% полезных веществ из 189 природных компонентов!
-                    </p>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__icon">
-                        <i class="fas fa-atom"></i>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="advantages__heading">Уникальная формула</div>
+                        <p class="advantages__text">
+                            Уникальная формула позволяет улучшить качество 
+                            и продолжительность активного долголетия при помощи инновационной разработки 
+                            Казахстанских ученых, позволившей извлечь до 85% полезных веществ из 189 природных компонентов!
+                        </p>
                     </div>
-                    <div class="advantages__heading">Уникальная формула</div>
-                    <p class="advantages__text">
-                        Уникальная формула позволяет улучшить качество 
-                        и продолжительность активного долголетия при помощи инновационной разработки 
-                        Казахстанских ученых, позволившей извлечь до 85% полезных веществ из 189 природных компонентов!
-                    </p>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="advantages__heading">Уникальная формула</div>
+                        <p class="advantages__text">
+                            Уникальная формула позволяет улучшить качество 
+                            и продолжительность активного долголетия при помощи инновационной разработки 
+                            Казахстанских ученых, позволившей извлечь до 85% полезных веществ из 189 природных компонентов!
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="advantages__heading">Уникальная формула</div>
+                        <p class="advantages__text">
+                            Уникальная формула позволяет улучшить качество 
+                            и продолжительность активного долголетия при помощи инновационной разработки 
+                            Казахстанских ученых, позволившей извлечь до 85% полезных веществ из 189 природных компонентов!
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="advantages__heading">Уникальная формула</div>
+                        <p class="advantages__text">
+                            Уникальная формула позволяет улучшить качество 
+                            и продолжительность активного долголетия при помощи инновационной разработки 
+                            Казахстанских ученых, позволившей извлечь до 85% полезных веществ из 189 природных компонентов!
+                        </p>
+                    </div>
                 </div>
+                
 
             </div>
         </div>
     </section>
+
+
+    <script src="./assets/vendor/jquery.min.js"></script>
+    <script src="./assets/vendor/owl-carusel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                autoplay:true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause:true,
+                nav:true,
+                loop:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:2,
+                        nav:false
+                    },
+                    1270:{
+                        items: 3,
+                        nav:true,
+                        loop:false
+                    }
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>

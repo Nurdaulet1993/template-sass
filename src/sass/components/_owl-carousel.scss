@@ -1,0 +1,34 @@
+.owl-prev, .owl-next{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    color: gray(1)!important;
+    background-color: $accent!important;
+    
+
+    span {
+        height: 100%;
+        font-size: 36px;
+        vertical-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+.owl-next {
+    right: -60px;
+}
+.owl-prev {
+    left: -60px;
+}
+.owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

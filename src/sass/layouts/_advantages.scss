@@ -1,16 +1,17 @@
 .advantages {
     height: 800px;
     &__content {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
     }
 }
 
 .advantages__item {
-    width: 350px;
-    border: 1px solid $accent;
+    width: 370px;
+    // border: 1px solid $accent;
     padding: (15 / 16) * 1rem;
     border-radius: (5 / 16) * 1rem;
+    text-align: center;
 
     .advantages__heading {
         color: $accent;
