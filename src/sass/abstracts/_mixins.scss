@@ -17,4 +17,13 @@
         @error 'The mq needs to be puted a number with units or jey from $breakpoints. You entered #{$size}'
     }
     
+};
+
+@mixin translate {
+    & {
+        transition: 0.3s;
+    }
+    &:hover {
+        transform: translateY(-20%);
+    }
 }
